@@ -1,0 +1,142 @@
+
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="70dp"
+    android:padding="50dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:gravity="center"-->
+<!--            android:text="Ultra Password"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="25dp"-->
+<!--            android:textStyle="bold"-->
+<!--            tools:layout_editor_absoluteX="0dp"-->
+<!--            tools:layout_editor_absoluteY="50dp" />-->
+
+        <TextView
+            android:id="@+id/text_password_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Click on Generate"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_copy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Copy" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose the password content"
+                android:textColor="#673AB7" />
+
+            <CheckBox
+                android:id="@+id/check_lower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Lower Case" />
+
+            <CheckBox
+                android:id="@+id/check_upper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upper Case" />
+
+            <CheckBox
+                android:id="@+id/check_numeric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Numeric Value" />
+
+            <CheckBox
+                android:id="@+id/check_special"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Special Chars" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Password Size" />
+
+                <EditText
+                    android:id="@+id/edit_pwd_size"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:hint="Password Size"
+                    android:inputType="numberDecimal"
+                    android:text="8" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/seek_Bar"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:thumbTint="@color/ic_launcher_background"
+                android:scrollbarSize="25dp"
+                android:min="8"
+                android:max="60"/>
+
+            <TextView
+                android:id="@+id/text_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Ultra Password by Robiul"
+                android:textColor="#BA144D" />
+
+            <Button
+                android:id="@+id/btn_generate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="30dp"
+                android:text="Generate" />
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>
